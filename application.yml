@@ -8,6 +8,13 @@ eureka:
 
 ---
 spring:
+  profiles:molly
+  molly:
+    config:
+      uri:test.molly.uri
+
+---
+spring:
   profiles: cloud
   cloud:
     config:
