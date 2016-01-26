@@ -8,15 +8,6 @@ eureka:
 
 ---
 spring:
-  profiles: molly
-  cloud:
-    config:
-      uri: http://${CONFIGSERVER_1_PORT_8888_TCP_ADDR:localhost}:8888
-endpoints:
-  restart: enabled
-
----
-spring:
   profiles: cloud
   cloud:
     config:
@@ -62,4 +53,13 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://${EUREKA_1_PORT_8761_TCP_ADDR:localhost}:8761/eureka/
+
+---
+spring:
+  profiles: molly
+  cloud:
+    config:
+      uri: http://${CONFIGSERVER_1_PORT_8888_TCP_ADDR:localhost}:8888
+endpoints:
+  restart: enabled
 
