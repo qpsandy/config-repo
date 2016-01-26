@@ -8,10 +8,10 @@ eureka:
 
 ---
 spring:
-  profiles:molly
+  profiles: molly
 testpoint:
   testconfig:
-    testuri:test.molly.uri
+    testuri: test.molly.uri
 
 ---
 spring:
