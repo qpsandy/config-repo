@@ -9,9 +9,9 @@ eureka:
 ---
 spring:
   profiles:molly
-  molly:
-    config:
-      uri:test.molly.uri
+testpoint:
+  testconfig:
+    testuri:test.molly.uri
 
 ---
 spring:
